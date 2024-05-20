@@ -49,7 +49,7 @@ function AuthenticateDocument() {
             mode: 'no-cors',
         }).then((response) => {
             setApiData(response?.data?.validadata)
-            if (apiData !== []) {
+            if (apiData !== 0) {
                 setLoading(false)
             }
         })
